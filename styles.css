@@ -1,0 +1,8 @@
+.vault-name-status {
+	font-weight: 600;
+	opacity: 0.85;
+}
+
+.vault-name-status:hover {
+	opacity: 1;
+}

@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Obsidian vault data (in case the repo lives inside a vault during dev)
+.obsidian/
+
+# Source maps
+*.map
+
+# NOTE: main.js is intentionally NOT ignored — Obsidian loads it directly
+# from the committed file / release asset.

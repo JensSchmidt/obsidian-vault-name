@@ -1,0 +1,9 @@
+{
+	"id": "vault-name",
+	"name": "Vault Name",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Displays a meaningful vault name in the status bar — configurable or derived from the parent folder. No more five identical 'docs' vaults.",
+	"author": "Jens Schmidt",
+	"isDesktopOnly": false
+}

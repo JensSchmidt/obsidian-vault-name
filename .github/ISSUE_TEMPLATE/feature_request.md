@@ -1,19 +1,19 @@
 ---
 name: Feature request
-about: Eine Idee oder Verbesserung vorschlagen
+about: Suggest an idea or improvement
 title: "[Feature] "
 labels: enhancement
 assignees: ""
 ---
 
-**Welches Problem löst der Vorschlag?**
-Eine klare Beschreibung des Problems. Z.B. "Mich stört, dass ..."
+**What problem does this solve?**
+A clear description of the problem. E.g. "I'm frustrated that ..."
 
-**Gewünschte Lösung**
-Was soll passieren?
+**Desired solution**
+What should happen?
 
-**Alternativen**
-Andere Ansätze, die du in Betracht gezogen hast.
+**Alternatives**
+Other approaches you have considered.
 
-**Zusätzlicher Kontext**
-Screenshots, Mockups oder weitere Hinweise.
+**Additional context**
+Screenshots, mockups, or any other notes.

@@ -1,29 +1,29 @@
 ---
 name: Bug report
-about: Einen Fehler melden, damit wir ihn beheben können
+about: Report a bug so we can fix it
 title: "[Bug] "
 labels: bug
 assignees: ""
 ---
 
-**Beschreibung des Fehlers**
-Eine klare, knappe Beschreibung des Problems.
+**Describe the bug**
+A clear and concise description of the problem.
 
-**Schritte zur Reproduktion**
-1. Gehe zu '...'
-2. Klicke auf '...'
-3. Fehler tritt auf
+**Steps to reproduce**
+1. Go to '...'
+2. Click on '...'
+3. The error occurs
 
-**Erwartetes Verhalten**
-Was hättest du stattdessen erwartet?
+**Expected behavior**
+What did you expect to happen instead?
 
 **Screenshots**
-Falls hilfreich, füge Screenshots hinzu.
+If helpful, add screenshots.
 
-**Umgebung**
-- Obsidian-Version:
-- Plugin-Version:
-- Betriebssystem (Desktop/Mobile):
+**Environment**
+- Obsidian version:
+- Plugin version:
+- Operating system (desktop/mobile):
 
-**Zusätzlicher Kontext**
-Alles Weitere, das beim Verständnis hilft.
+**Additional context**
+Anything else that helps understand the issue.

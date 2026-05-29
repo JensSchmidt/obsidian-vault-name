@@ -1,12 +1,12 @@
 # Vault Name – Obsidian Plugin
 
-Zeigt einen aussagekräftigen Vault-Namen in der Statusleiste an. Schluss mit fünfmal "docs" untereinander!
+Shows a meaningful vault name in the status bar. No more five identical "docs" entries stacked on top of each other!
 
 ![Status bar](screenshots/status-bar.png)
 
 ## Problem
 
-Wenn du mehrere Projekte hast, die jeweils einen `docs`-Ordner als Obsidian-Vault nutzen, sieht die Vault-Auswahl so aus:
+If you have several projects that each use a `docs` folder as an Obsidian vault, the vault switcher looks like this:
 
 ```
 docs
@@ -16,66 +16,66 @@ docs
 docs
 ```
 
-Nicht hilfreich.
+Not helpful.
 
-## Lösung
+## Solution
 
-Dieses Plugin zeigt in der **Statusleiste** unten einen sprechenden Namen an:
+This plugin shows a descriptive name in the **status bar** at the bottom:
 
-- **Manuell konfiguriert** → z.B. `📂 Mein Projekt`
-- **Automatischer Fallback** → Parent-Ordnername, z.B. `📂 my-cool-app / docs`
+- **Manually configured** → e.g. `📂 My Project`
+- **Automatic fallback** → parent folder name, e.g. `📂 my-cool-app / docs`
 
 ## Installation
 
-### Manuell (empfohlen für Entwicklung)
+### Manual (recommended for development)
 
-1. Plugin bauen:
+1. Build the plugin:
 
 ```bash
 npm install
 npm run build
 ```
 
-2. Im Vault-Ordner einen Plugin-Ordner erstellen:
+2. Create a plugin folder inside your vault:
 
 ```bash
 mkdir -p /path/to/your/vault/.obsidian/plugins/vault-name
 ```
 
-3. Build-Artefakte kopieren:
+3. Copy the build artifacts:
 
 ```bash
 cp main.js manifest.json styles.css /path/to/your/vault/.obsidian/plugins/vault-name/
 ```
 
-4. Obsidian neustarten → Einstellungen → Community Plugins → "Vault Name" aktivieren.
+4. Restart Obsidian → Settings → Community Plugins → enable "Vault Name".
 
-## Konfiguration
+## Configuration
 
-Unter **Einstellungen → Vault Name**:
+Under **Settings → Vault Name**:
 
-- **Custom vault name**: Eigenen Namen vergeben (z.B. "API Gateway Docs")
-- Feld leer lassen → es wird automatisch `parent-folder / docs` angezeigt
+- **Custom vault name**: set your own display name (e.g. "API Gateway Docs")
+- Leave the field empty → `parent-folder / docs` is shown automatically
 
-## Entwicklung
+## Development
 
-Der Quellcode liegt in `src/` und wird mit esbuild zu `main.js` im Wurzelverzeichnis gebündelt.
+The source code lives in `src/` and is bundled with esbuild into `main.js` at the repository root.
 
 ```bash
 npm install
-npm run dev      # Watch mode – baut bei jeder Änderung neu
-npm run build    # Typecheck (tsc) + Produktions-Build
+npm run dev      # watch mode – rebuilds on every change
+npm run build    # typecheck (tsc) + production build
 ```
 
-| Pfad                | Zweck                                      |
+| Path                | Purpose                                    |
 | ------------------- | ------------------------------------------ |
-| `src/main.ts`       | Plugin Entry Point                         |
-| `src/settings.ts`   | Settings-Interface & Settings-Tab          |
-| `src/statusBar.ts`  | Namens-Auflösung & Status-Bar-Wrapper      |
+| `src/main.ts`       | plugin entry point                         |
+| `src/settings.ts`   | settings interface & settings tab          |
+| `src/statusBar.ts`  | name resolution & status bar wrapper       |
 
 ## Release
 
-Ein Git-Tag, der exakt der `version` in `manifest.json` entspricht (ohne `v`-Präfix), löst den Workflow in `.github/workflows/release.yml` aus. Dieser baut das Plugin und hängt `main.js`, `manifest.json` und `styles.css` als Assets an das GitHub-Release.
+A git tag that matches the `version` in `manifest.json` exactly (without a `v` prefix) triggers the workflow in `.github/workflows/release.yml`. It builds the plugin and attaches `main.js`, `manifest.json` and `styles.css` as release assets.
 
 ```bash
 git tag 1.0.0

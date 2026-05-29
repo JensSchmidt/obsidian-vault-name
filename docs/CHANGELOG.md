@@ -1,15 +1,15 @@
 # Changelog
 
-Alle nennenswerten Änderungen an diesem Plugin werden hier dokumentiert.
+All notable changes to this plugin are documented in this file.
 
-Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.1.0/),
-und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [1.0.0] - 2026-05-29
 
-### Hinzugefügt
+### Added
 
-- Status-Bar-Eintrag mit aussagekräftigem Vault-Namen.
-- Manuell konfigurierbarer Anzeigename über den Settings-Tab.
-- Automatischer Fallback auf `parent-folder / vault-folder`, wenn kein Name gesetzt ist.
-- Live-Aktualisierung der Statusleiste beim Speichern der Einstellungen.
+- Status bar entry showing a meaningful vault name.
+- Manually configurable display name via the settings tab.
+- Automatic fallback to `parent-folder / vault-folder` when no name is set.
+- Live update of the status bar when settings are saved.

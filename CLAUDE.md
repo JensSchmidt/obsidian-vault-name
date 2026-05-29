@@ -64,4 +64,4 @@ entry to `versions.json`.
   settings save (`saveSettings()` calls it), which is how name changes take effect live.
 - `manifest.json` `author` and the `LICENSE` copyright holder are still the placeholder
   `Your Name` — replace before publishing.
-- README is in German; the plugin/settings UI strings are in English.
+- All docs (README, CHANGELOG) and UI strings are in English.
